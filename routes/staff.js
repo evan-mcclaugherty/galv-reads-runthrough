@@ -25,4 +25,12 @@ router.post('/', function(req, res, next) {
         res.redirect('/staff');
     });
 })
+
+router.get('/delete/:id', function(req, res, next) {
+    api.queries.getStaff(req.params.id).then(function(staff) {
+        res.render('delete-staff', {
+            staff: staff
+        });
+    });
+})
 module.exports = router;

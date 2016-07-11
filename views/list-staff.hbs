@@ -1,9 +1,14 @@
 <section class="staff">
-    <h2>Instructors</h2>
+  <h2>Instructors</h2>
   <ul class="staff-list">
     {{#each staff}}
-      <li>{{first_name}}</li>
+      <li>
+        <p>{{first_name}} {{last_name}}</p>
+        <a href="/staff/delete/{{id}}">
+          <i class="fa fa-remove"></i>
+        </a>
+      </li>
     {{/each}}
   </ul>
-  <a class="new"href="/staff/new">Add Instructor</a>
+  <a class="new" href="/staff/new">Add Instructor</a>
 </section>

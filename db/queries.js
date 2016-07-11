@@ -6,5 +6,8 @@ module.exports = {
     },
     addStaff: function(staff) {
         return knex('staff').insert(staff);
+    },
+    getStaff: function(id) {
+        return knex('staff').select().where('id', id).first();
     }
 }

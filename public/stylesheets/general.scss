@@ -1,3 +1,9 @@
+.fa-remove {
+    color: $alert;
+}
+.delete {
+    background-color: $alert;
+}
 h1 {
     @include primary-header-font
 }
@@ -6,7 +12,7 @@ p {
 }
 a {
     text-decoration: none;
-    @@include body-font;
+    @include body-font;
 }
 input,
 label {
