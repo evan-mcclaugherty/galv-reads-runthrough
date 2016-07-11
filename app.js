@@ -10,7 +10,7 @@ var auth = require('./auth');
 require('dotenv').config();
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var staff = require('./routes/staff');
 
 var app = express();
 
@@ -26,6 +26,14 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
+
+app.use(require('node-sass-middleware')({
+    src: path.join(__dirname, 'public'),
+    dest: path.join(__dirname, 'public'),
+    indentedSyntax: false,
+    sourceMap: true
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
@@ -34,7 +42,7 @@ app.use(session({
 app.use(auth.passport.initialize());
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/staff', staff);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

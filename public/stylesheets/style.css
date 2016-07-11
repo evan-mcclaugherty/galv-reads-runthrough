@@ -1,8 +1,36 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700; }
 
-a {
-  color: #00B7FF;
-}
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+header {
+  background-color: #4d4d4d;
+  color: #f7901e;
+  padding: 1rem; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; }
+
+.staff h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem; }
+
+.staff .staff-list li {
+  padding: 1rem;
+  background-color: #cccccc;
+  margin: 0.5rem 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */
