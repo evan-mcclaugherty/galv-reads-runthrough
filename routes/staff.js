@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var api = require('../db/api');
-console.log(api.queries);
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     var staff = api.queries.listStaff().then(function(staff) {
@@ -13,4 +12,17 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.get('/new', function(req, res, next) {
+    res.render('add-staff');
+});
+
+router.post('/', function(req, res, next) {
+    var staff = {
+        first_name: req.body.first_name,
+        last_name: req.body.last_name
+    }
+    api.queries.addStaff(staff).then(function() {
+        res.redirect('/staff');
+    });
+})
 module.exports = router;
