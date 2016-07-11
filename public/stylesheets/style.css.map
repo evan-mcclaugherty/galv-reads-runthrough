@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss",
+		"colors.scss",
+		"typography.scss",
+		"general.scss",
+		"header.scss",
+		"main.scss"
+	],
+	"mappings": "AGAA,AAAA,EAAE,CAAC;EDCC,WAAW,EAAE,8CAA+C;EAC5D,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,GAAI,GCDpB;;AACD,AAAA,CAAC,CAAC;EDUE,WAAW,EAAE,8CAA+C;EAC5D,SAAS,EAAE,MAAO;EAClB,WAAW,EAAE,GAAI,GCVpB;;ACLD,AAAA,MAAM,CAAC;EACH,gBAAgB,EHER,OAAG;EGDX,KAAK,EHAO,OAAI;EGChB,OAAO,EAAE,IAAK,GACjB;;ACJD,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAK;EACd,eAAe,EAAE,MAAO;EACxB,WAAW,EAAE,MAAO;EACpB,UAAU,EAAE,IAAK,GACpB",
+	"names": []
+}
