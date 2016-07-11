@@ -33,4 +33,10 @@ router.get('/delete/:id', function(req, res, next) {
         });
     });
 })
+
+router.delete('/:id', function(req, res, next) {
+    api.queries.removeStaff(req.params.id).then(function() {
+        res.redirect('/staff')
+    });
+})
 module.exports = router;

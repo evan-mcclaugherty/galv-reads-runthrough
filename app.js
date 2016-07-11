@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('cookie-session');
 var auth = require('./auth');
+var methodOverride = require('method-override');
 
 require('dotenv').config();
 
@@ -22,6 +23,7 @@ app.set('view engine', 'hbs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
+app.use(methodOverride("_method"));
 app.use(bodyParser.urlencoded({
     extended: false
 }));

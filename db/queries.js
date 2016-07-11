@@ -9,5 +9,8 @@ module.exports = {
     },
     getStaff: function(id) {
         return knex('staff').select().where('id', id).first();
+    },
+    removeStaff: function(id) {
+        return knex('staff').del().where('id', id);
     }
 }
